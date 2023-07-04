@@ -1,15 +1,15 @@
 package duck.ui;
 
 import duck.fly.FlyWithWings;
-import duck.quack.Quack;
+import duck.quack.MuteQuack;
 
 public class DecoyDuck implements Duck {
 
-	Quack quack;
+	MuteQuack quack;
 	FlyWithWings fly;
 	
 	
-	public void setQuack(Quack quack) {
+	public void setQuack(MuteQuack quack) {
 		this.quack = quack;
 	}
 

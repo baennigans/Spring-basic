@@ -15,22 +15,22 @@
 <bean id="flyNo" class="duck.fly.FlyNoWay" />
 
 
-<!-- 
+<!--
 <bean id="duck" class="duck.ui.MallardDuck">
 	<property name="fly" ref="fly" />
 	<property name="quack" ref="quack" />
 </bean>
- -->
+
 <bean id="duck" class="duck.ui.RubberDuck">
 	<property name="fly" ref="flyNo" />
 	<property name="quack" ref="squeak" />
 </bean>
-<!-- 
+ -->
 <bean id="duck" class="duck.ui.DecoyDuck">
-	<property name="fly" ref="flyNo" />
+	<property name="fly" ref="fly" />
 	<property name="quack" ref="muteQuack" />
 </bean>
- -->
+
 
 
 

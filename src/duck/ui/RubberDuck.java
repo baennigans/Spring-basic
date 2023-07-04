@@ -1,19 +1,19 @@
 package duck.ui;
 
-import duck.fly.FlyWithWings;
-import duck.quack.Quack;
+import duck.fly.FlyNoWay;
+import duck.quack.Squeak;
 
 public class RubberDuck implements Duck {
 
-	Quack quack;
-	FlyWithWings fly;
+	Squeak quack;
+	FlyNoWay fly;
 	
 	
-	public void setQuack(Quack quack) {
+	public void setQuack(Squeak quack) {
 		this.quack = quack;
 	}
 
-	public void setFly(FlyWithWings fly) {
+	public void setFly(FlyNoWay fly) {
 		this.fly = fly;
 	}
 	
