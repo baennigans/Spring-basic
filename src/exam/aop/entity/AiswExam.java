@@ -1,23 +1,20 @@
-package exam.di.entity;
+package exam.aop.entity;
 
-public class HighTechExam implements Exam {
-
+public class AiswExam implements Exam {
+	
 	private int kor;
 	private int eng;
 	private int math;
-	private int com;
 	
-	public HighTechExam() {
+	public AiswExam() {
 		
 	}
 	
-	public HighTechExam(int kor, int eng, int math, int com) {
+	public AiswExam(int kor, int eng, int math) {
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
-		this.com = com;
 	}
-
 	public int getKor() {
 		return kor;
 	}
@@ -36,22 +33,21 @@ public class HighTechExam implements Exam {
 	public void setMath(int math) {
 		this.math = math;
 	}
-	public int getCom() {
-		return com;
-	}
-	public void setCom(int com) {
-		this.com = com;
-	}
-	
+
 	@Override
 	public int total() {
-		int result = kor+eng+math+com;
+		int result = kor + eng + math;
+		try {
+			Thread.sleep(200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return result;
 	}
-	
+
 	@Override
 	public float avg() {
-		float result = (float)(total()/4);
+		float result = (float)(total()/3);
 		return result;
 	}
 }

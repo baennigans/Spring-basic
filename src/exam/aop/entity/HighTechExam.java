@@ -1,4 +1,4 @@
-package exam.di.entity;
+package exam.aop.entity;
 
 public class HighTechExam implements Exam {
 
@@ -46,6 +46,11 @@ public class HighTechExam implements Exam {
 	@Override
 	public int total() {
 		int result = kor+eng+math+com;
+		try {
+			Thread.sleep(200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return result;
 	}
 	
