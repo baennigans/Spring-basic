@@ -13,8 +13,8 @@ public class PizzaMain {
 		
 		PizzaShop pizzaShop = context.getBean("pizzaShop", PizzaShop.class);
 		
-		pizzaShop.createPizza();
 		pizzaShop.orderPizza();		
+		pizzaShop.createPizza();
 		
 	}
 }

@@ -3,6 +3,12 @@ package pizza.pizza;
 public class NYVeggiePizza extends Pizza{
 
 	@Override
+	public void name() {
+		System.out.println("ORDER NAME : NY VeggiePizza");
+		System.out.println("-------------------------------");
+	}
+
+	@Override
 	public void prepare() {
 		System.out.println("1. NY VeggiePizza prepare..");
 	}
@@ -22,10 +28,5 @@ public class NYVeggiePizza extends Pizza{
 		System.out.println("4. NY VeggiePizza box..");
 	}
 
-	@Override
-	public void name() {
-		System.out.println("-------------------------------");
-		System.out.println("ORDER NAME : NY VeggiePizza");
-	}
-
+	
 }

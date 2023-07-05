@@ -3,17 +3,16 @@ package pizza.pizzashop;
 public class NYPizzaShop extends PizzaShop {
 	
 	@Override
-	public void createPizza() {
+	public void orderPizza() {
 		System.out.println("<< NY Pizzashop. >>");
+		pizza.name();
+	}
+	
+	@Override
+	public void createPizza() {
 		pizza.prepare();
 		pizza.bake();
 		pizza.cut();
 		pizza.box();
 	}
-
-	@Override
-	public void orderPizza() {
-		pizza.name();
-	}
-	
 }

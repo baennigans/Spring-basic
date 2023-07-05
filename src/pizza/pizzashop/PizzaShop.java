@@ -14,7 +14,7 @@ public abstract class PizzaShop {
 		this.pizza = pizza;
 	}
 	
-	public abstract void createPizza();
 	public abstract void orderPizza();
+	public abstract void createPizza();
 	
 }
