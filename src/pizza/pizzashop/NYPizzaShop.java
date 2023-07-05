@@ -13,7 +13,7 @@ public class NYPizzaShop extends PizzaShop {
 
 	@Override
 	public void orderPizza() {
-		pizza.getName();
+		pizza.name();
 	}
 	
 }

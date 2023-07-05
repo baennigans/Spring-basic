@@ -2,15 +2,6 @@ package pizza.pizza;
 
 public class CaliforniaCheesePizza extends Pizza {
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	
 	@Override
 	public void prepare() {
 		System.out.println("1. California CheesePizza prepare..");
@@ -29,6 +20,11 @@ public class CaliforniaCheesePizza extends Pizza {
 	@Override
 	public void box() {
 		System.out.println("4. California CheesePizza box..");
+	}
+
+	@Override
+	public void name() {
+		System.out.println("NAME : California CheesePizza");
 	}
 
 }

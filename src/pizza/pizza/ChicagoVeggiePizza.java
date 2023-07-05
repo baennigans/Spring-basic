@@ -22,4 +22,9 @@ public class ChicagoVeggiePizza extends Pizza {
 		System.out.println("4. Chicago VeggiePizza box..");
 	}
 
+	@Override
+	public void name() {
+		System.out.println("NAME : Chicago VeggiePizza");
+	}
+
 }
