@@ -7,12 +7,14 @@
    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+
 <bean id="NYCheesePizza" class="pizza.pizza.NYCheesePizza" />
 <bean id="NYVeggiePizza" class="pizza.pizza.NYVeggiePizza" />
 <bean id="ChicagoCheesePizza" class="pizza.pizza.ChicagoCheesePizza" />
 <bean id="ChicagoVeggiePizza" class="pizza.pizza.ChicagoVeggiePizza" />
 <bean id="CaliforniaCheesePizza" class="pizza.pizza.CaliforniaCheesePizza" />
 <bean id="CaliforniaVeggiePizza" class="pizza.pizza.CaliforniaVeggiePizza" />
+
 
 
 <!--  NY shop / NY cheese 
@@ -79,11 +81,11 @@
 </bean>
 -->
 
-<!--  Chicago shop / California cheese	-->
+<!--  Chicago shop / California cheese	
 <bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
 	<property name="pizza" ref="CaliforniaCheesePizza"></property>
 </bean>
-
+-->
 
 <!--  Chicago shop / California veggie	
 <bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
@@ -113,11 +115,11 @@
 </bean>
 -->
 
-<!--  California shop / Chicago veggie
+<!--  California shop / Chicago veggie-->
 <bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
 	<property name="pizza" ref="ChicagoVeggiePizza"></property>
 </bean>
--->
+
 
 <!--  California shop / California cheese
 <bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >

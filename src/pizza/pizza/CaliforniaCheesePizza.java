@@ -24,7 +24,8 @@ public class CaliforniaCheesePizza extends Pizza {
 
 	@Override
 	public void name() {
-		System.out.println("NAME : California CheesePizza");
+		System.out.println("-------------------------------");
+		System.out.println("ORDER NAME : California CheesePizza");
 	}
 
 }
