@@ -22,10 +22,6 @@
 	<property name="exam" ref="exam" />	
 </bean>
 
-
-
-
-
 <bean id="logAroundAdvice" class="exam.aop.advice.LogAroundAdvice"></bean>
 <bean id="logBeforeAdvice" class="exam.aop.advice.LogBeforeAdvice"></bean>
 <bean id="logAfterReturningAdvice" class="exam.aop.advice.LogAfterReturningAdvice"></bean>

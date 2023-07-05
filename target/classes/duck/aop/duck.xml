@@ -14,7 +14,6 @@
 <bean id="fly" class="duck.fly.FlyWithWings" />
 <bean id="flyNo" class="duck.fly.FlyNoWay" />
 
-
 <!--
 <bean id="duck" class="duck.ui.MallardDuck">
 	<property name="fly" ref="fly" />
@@ -30,9 +29,5 @@
 	<property name="fly" ref="fly" />
 	<property name="quack" ref="muteQuack" />
 </bean>
-
-
-
-
 
 </beans>

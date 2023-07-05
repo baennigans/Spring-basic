@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+   xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:p="http://www.springframework.org/schema/p"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="NYCheesePizza" class="pizza.pizza.NYCheesePizza" />
+<bean id="NYVeggiePizza" class="pizza.pizza.NYVeggiePizza" />
+<bean id="ChicagoCheesePizza" class="pizza.pizza.ChicagoCheesePizza" />
+<bean id="ChicagoVeggiePizza" class="pizza.pizza.ChicagoVeggiePizza" />
+<bean id="CaliforniaCheesePizza" class="pizza.pizza.CaliforniaCheesePizza" >
+	<property name="name" value="CaliforniaCheesePizza" />
+</bean>
+<bean id="CaliforniaVeggiePizza" class="pizza.pizza.CaliforniaVeggiePizza" />
+
+
+<!--  NY shop / NY cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="NYCheesePizza"></property>
+</bean>
+-->
+
+<!--  NY shop / NY veggie	
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="NYVeggiePizza"></property>
+</bean>
+-->
+
+<!--  NY shop / Chicago cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="ChicagoCheesePizza"></property>
+</bean>
+-->
+
+<!--  NY shop / Chicago veggie
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="ChicagoVeggiePizza"></property>
+</bean>
+-->
+
+<!--  NY shop / California cheese	-->
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="CaliforniaCheesePizza"></property>
+</bean>
+
+
+<!--  NY shop / California veggie
+<bean id="pizzaShop" class="pizza.pizzashop.NYPizzaShop" >
+	<property name="pizza" ref="CaliforniaVeggiePizza"></property>
+</bean>
+-->
+
+
+
+
+
+<!--  Chicago shop / NY cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="NYCheesePizza"></property>
+</bean>
+-->
+
+<!--  Chicago shop / NY veggie
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="NYVeggiePizza"></property>
+</bean>
+-->
+
+<!--  Chicago shop / Chicago cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="ChicagoCheesePizza"></property>
+</bean>
+-->
+
+<!--  Chicago shop / Chicago veggie
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="ChicagoVeggiePizza"></property>
+</bean>
+-->
+
+<!--  Chicago shop / California cheese
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="CaliforniaCheesePizza"></property>
+</bean>
+-->
+
+<!--  Chicago shop / California veggie
+<bean id="pizzaShop" class="pizza.pizzashop.ChicagoPizzaShop" >
+	<property name="pizza" ref="CaliforniaVeggiePizza"></property>
+</bean>
+-->
+
+
+
+
+
+<!--  California shop / NY cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="NYCheesePizza"></property>
+</bean>
+-->
+
+<!--  California shop / NY veggie
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="NYVeggiePizza"></property>
+</bean>
+-->
+
+<!--  California shop / Chicago cheese 
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="ChicagoCheesePizza"></property>
+</bean>
+-->
+
+<!--  California shop / Chicago veggie
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="ChicagoVeggiePizza"></property>
+</bean>
+-->
+
+<!--  California shop / California cheese
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="CaliforniaCheesePizza"></property>
+</bean>
+-->
+
+<!--  California shop / California veggie
+<bean id="pizzaShop" class="pizza.pizzashop.CaliforniaPizzaShop" >
+	<property name="pizza" ref="CaliforniaVeggiePizza"></property>
+</bean>
+-->
+
+
+
+</beans>
